@@ -10,11 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Your email where you want to receive enquiries
     $to = "your@email.com";  // 🔴 CHANGE THIS
 
-    $subject = "New Enquiry from - Godrej Nagpur Plots";
+    $subject = "New Enquiry from - Godrej Rivershore Plots";
 
     // Email message
     $message = "
-    Godrej Nagpur Plots Details:
+    Godrej Rivershore Plots Details:
 
     Name: $name
     Phone: $phone
