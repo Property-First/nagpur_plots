@@ -154,7 +154,7 @@ body {
   }
 
     .hero-slide {
-    background-image: url('./images/nagpur_banner_vertical.png');
+    background-image: url('./images/nagpur_vertical.png');
     background-size: cover;          /* ✅ fill full area */
     background-position: center top; /* ✅ keep building visible */
     background-repeat: no-repeat;
