@@ -96,7 +96,7 @@ body {
   
   .nav-links {
     position: absolute;
-    top: 80px;
+    top: 45px;
     left: 0;
     width: 100%;
     background: #fff;
@@ -108,7 +108,7 @@ body {
 
   .nav-links.active {
     display: flex;
-        background: #b5a3a3;
+        background: #9bb712;
         z-index: 21;
   }
 

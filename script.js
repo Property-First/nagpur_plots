@@ -12,6 +12,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
       top: topPosition,
       behavior: 'smooth'
     });
+    document.getElementById("navLinks").classList.remove("active");
   });
 });
 
@@ -24,6 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(navLinks)
     navLinks.classList.toggle("active");
   });
+
+  document.addEventListener("click", (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+      navLinks.classList.remove("active");
+    }
+  });
+
 });
 
 
