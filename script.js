@@ -154,3 +154,40 @@ window.onclick = function(e){
     }
 };
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const modal = document.getElementById("enquiryModal");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // Function to open modal
+    function openModal() {
+        modal.style.display = "flex";
+    }
+
+    // Function to close modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Open immediately when page loads
+    openModal();
+
+    // Close button
+    closeBtn.addEventListener("click", closeModal);
+
+    // Close when clicking outside modal content
+    window.addEventListener("click", function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Show modal every 15 seconds (only if it's closed)
+    setInterval(function () {
+        if (modal.style.display === "none") {
+            openModal();
+        }
+    }, 15000);
+
+});
